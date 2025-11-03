@@ -1,0 +1,18 @@
+2. İstifadəçidən bir ədəd alın, onun müsbət, mənfi və ya sıfır olduğunu göstərin.
+#include <iostream>
+using namespace std;
+
+int main() {
+    int a;
+    cout << "Bir ədəd daxil edin: ";
+    cin >> a;
+
+    if (a > 0)
+        cout << "Müsbət ədəd";
+    else if (a < 0)
+        cout << "Mənfi ədəd";
+    else
+        cout << "Sıfırdır";
+
+    return 0;
+}
