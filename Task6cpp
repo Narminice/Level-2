@@ -1,0 +1,24 @@
+6. Ay nömrəsinə görə ilin hansı fəsli olduğunu yazan proqram (1–12).
+#include <iostream>
+using namespace std;
+
+int main() {
+    int ay;
+    cout << "Ay nömrəsini daxil edin (1–12): ";
+    cin >> ay;
+
+    switch (ay) {
+        case 12: case 1: case 2:
+            cout << "Fəsil: Qış"; break;
+        case 3: case 4: case 5:
+            cout << "Fəsil: Yaz"; break;
+        case 6: case 7: case 8:
+            cout << "Fəsil: Yay"; break;
+        case 9: case 10: case 11:
+            cout << "Fəsil: Payız"; break;
+        default:
+            cout << "Yanlış ay nömrəsi!";
+    }
+
+    return 0;
+}
