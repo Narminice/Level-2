@@ -1,0 +1,26 @@
+5. Tələbənin imtahan balına əsasən qiymət hesablayan proqram.
+#include <iostream>
+using namespace std;
+
+int main() {
+    int bal;
+    cout << "İmtahan balını daxil edin (0–100): ";
+    cin >> bal;
+
+    if (bal >= 0 && bal <= 50)
+        cout << "Qiymət: F";
+    else if (bal <= 60)
+        cout << "Qiymət: E";
+    else if (bal <= 70)
+        cout << "Qiymət: D";
+    else if (bal <= 80)
+        cout << "Qiymət: C";
+    else if (bal <= 90)
+        cout << "Qiymət: B";
+    else if (bal <= 100)
+        cout << "Qiymət: A";
+    else
+        cout << "Yanlış bal!";
+
+    return 0;
+}
