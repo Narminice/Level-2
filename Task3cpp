@@ -1,0 +1,17 @@
+3. Üç ədəd daxil edin və ən böyüyünü ekrana yazın.
+#include <iostream>
+using namespace std;
+
+int main() {
+    int a, b, c;
+    cout << "Üç ədəd daxil edin: ";
+    cin >> a >> b >> c;
+
+    int max = a;
+    if (b > max) max = b;
+    if (c > max) max = c;
+
+    cout << "Ən böyük ədəd: " << max;
+
+    return 0;
+}
