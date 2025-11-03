@@ -1,0 +1,18 @@
+1. İki ədəd daxil edin. Hansı böyükdürsə, onu ekrana çıxarın.
+#include <iostream>
+using namespace std;
+
+int main() {
+    int a, b;
+    cout << "İki ədəd daxil edin: ";
+    cin >> a >> b;
+
+    if (a > b)
+        cout << "Böyük ədəd: " << a;
+    else if (b > a)
+        cout << "Böyük ədəd: " << b;
+    else
+        cout << "Ədədlər bərabərdir.";
+
+    return 0;
+}
