@@ -1,0 +1,16 @@
+4. İstifadəçidən bir ədəd alın, cüt və ya tək olduğunu göstərin.
+#include <iostream>
+using namespace std;
+
+int main() {
+    int a;
+    cout << "Bir ədəd daxil edin: ";
+    cin >> a;
+
+    if (a % 2 == 0)
+        cout << "Cüt ədəd";
+    else
+        cout << "Tək ədəd";
+
+    return 0;
+}
